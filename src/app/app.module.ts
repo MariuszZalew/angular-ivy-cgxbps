@@ -1,47 +1,37 @@
-// import { NgModule } from '@angular/core';
-// import { BrowserModule } from '@angular/platform-browser';
-// import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-// import { AppComponent } from './app.component';
-// import { HelloComponent } from './hello.component';
+import { AppComponent } from './app.component';
 
-// @NgModule({
-//   imports:      [ BrowserModule, FormsModule ],
-//   declarations: [ AppComponent, HelloComponent ],
-//   bootstrap:    [ AppComponent ]
-// })
-// export class AppModule { }
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
+import { AfterContentParentComponent } from './after-content-parent.component';
+import { AfterContentComponent } from './after-content.component';
+import { ChildComponent } from './child.component';
 
-import { AppComponent } from "./app.component";
+import { AfterViewParentComponent } from './after-view-parent.component';
+import { AfterViewComponent } from './after-view.component';
+import { ChildViewComponent } from './child-view.component';
 
-import { AfterContentParentComponent } from "./after-content-parent.component";
-import { AfterContentComponent } from "./after-content.component";
-import { ChildComponent } from "./child.component";
+import { CounterParentComponent } from './counter-parent.component';
+import { MyCounterComponent } from './counter.component';
 
-import { AfterViewParentComponent } from "./after-view-parent.component";
-import { AfterViewComponent } from "./after-view.component";
-import { ChildViewComponent } from "./child-view.component";
+import { DoCheckParentComponent } from './do-check-parent.component';
+import { DoCheckComponent } from './do-check.component';
 
-import { CounterParentComponent } from "./counter-parent.component";
-import { MyCounterComponent } from "./counter.component";
+import { OnChangesParentComponent } from './on-changes-parent.component';
+import { OnChangesComponent } from './on-changes.component';
 
-import { DoCheckParentComponent } from "./do-check-parent.component";
-import { DoCheckComponent } from "./do-check.component";
+import { PeekABooParentComponent } from './peek-a-boo-parent.component';
+import { PeekABooComponent } from './peek-a-boo.component';
 
-import { OnChangesParentComponent } from "./on-changes-parent.component";
-import { OnChangesComponent } from "./on-changes.component";
-
-import { PeekABooParentComponent } from "./peek-a-boo-parent.component";
-import { PeekABooComponent } from "./peek-a-boo.component";
-
-import { SpyParentComponent } from "./spy.component";
-import { SpyDirective } from "./spy.directive";
+import { SpyParentComponent } from './spy.component';
+import { SpyDirective } from './spy.directive';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
   declarations: [
     AppComponent,
     AfterContentParentComponent,
@@ -61,6 +51,6 @@ import { SpyDirective } from "./spy.directive";
     SpyParentComponent,
     SpyDirective
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule {}
+export class AppModule { }
